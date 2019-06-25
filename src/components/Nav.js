@@ -37,6 +37,9 @@ export default function Nav({ onMenuToggle = () => {} }) {
                 <Link to="/about">About Us</Link>
               </li>
               <li>
+                <a href="https://www.flickr.com/photos/182245855@N04/albums" target="_blank" rel="noopener noreferrer">Gallery</a>
+              </li>
+              <li>
                 <a href="https://www.youtube.com/channel/UCOff0cemmvakSbkV4HhNzbA/live" target="_blank" rel="noopener noreferrer">Live Stream</a>
               </li>
             </ul>

@@ -39,3 +39,27 @@ description: 'First Overseas Chinese Homecoming Gathering ever held on a univers
 
   Unlike a conference with pre-determined speakers and pre-set teachings, in a gathering believers answer a call from the Lord to come together to worship and wait before Him, posturing themselves to hear what the Spirit is saying to the Church. A team of seasoned mature leaders provides spiritual oversight and protection in the meetings, as they walk together to discern what the Lord is saying through the body and facilitate the working of the Holy Spirit.
 </p>
+
+<hr/>
+
+<h2>Playlist</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLq6NhR3hu7glnLdb_enWXaDMHMW78dsh0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+
+<hr/>
+
+<h2>Gallery</h2>
+
+<iframe style="position: relative; top: 0; left: 0;" width="800" height="400" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157709264091261&sort=0&by=album&theme=default_notextpanel&scale=fill&speed=3000&limit=100&skin=alexis&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+</iframe>
+<script type="text/javascript">
+  function showpics() {
+    var a = $("#box").val();
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + a + "&tagmode=any&format=json&jsoncallback=?", function(a) {
+        $("#images").hide().html(a).fadeIn("fast"), $.each(a.items, function(a, e) {
+            $("<img/>").attr("src", e.media.m).appendTo("#images")
+        })
+    })
+  }
+</script>
