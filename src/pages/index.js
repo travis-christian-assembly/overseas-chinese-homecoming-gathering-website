@@ -1,28 +1,16 @@
-import React from 'react';
+import React from 'react'
+import Layout from 'components/Layout'
+import Scroll from 'components/Scroll'
 
-import Layout from '../components/Layout';
+import config from 'root/config'
+import pic_giving from 'assets/images/giving.jpg'
 
-import Scroll from '../components/Scroll';
-
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
-        <ul className="actions special">
-          <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll>
-          </li>
-        </ul>
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
@@ -34,173 +22,97 @@ const IndexPage = () => (
     <section id="one" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+          <h2>Upcoming Gatherings</h2>
         </header>
-        <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
+        <ul className="upcoming-gatherings">
+          <li className="icon solid fa-car">
+            <h3>Hong Kong</h3>
+            <p>
+              July 24 - July 27, 2019
+              <br/>
+              Asia World-Expo, Hong Kong
+            </p>
+            <a href="/#" className="button small primary">Register</a>
           </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
+          <li className="icon solid fa-city">
+            <h3>New York, NY</h3>
+            <p>
+              November 1 - November 4, 2019
+              <br/>
+              Madison Square Garden, New York, NY
+            </p>
+            <a href="/#" className="button small primary">Register</a>
           </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
+          <li className="icon solid fa-pizza-slice">
+            <h3>Chicago, IL</h3>
+            <p>
+              April 20 - April 23, 2020
+              <br/>
+              United Center, Chicago, IL
+            </p>
+            <a href="/#" className="button small primary">Register</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic1} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic2} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section id="three" className="wrapper style3 special">
+    <section id="two" className="wrapper style2">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>
+            About Homecoming Gathering
+          </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Homecoming gathering is a group of pastors and believers from nations who have been walking together — praying, worshipping, fellowshipping and crying out to God together to see the glory of God to come to this nation. It is open to the Body of Christ to walk together as family to whatever extent the Lord releases them to do so. Our heart is to embrace all believers, all denominations, and para-churches. And just like a family, we desire to walk together with each generation. Old and young alike, all have an important role to play in a family, and all are needed to make a family complete.
+          </p>
+          <br/>
+          <p>
+            Unlike a conference with pre-determined speakers and pre-set teachings, in a gathering believers answer a call from the Lord to come together to worship and wait before Him, posturing themselves to hear what the Spirit is saying to the Church. A team of seasoned mature leaders provides spiritual oversight and protection in the meetings, as they walk together to discern what the Lord is saying through the body and facilitate the working of the Holy Spirit.
           </p>
         </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
-        <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
-        </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
-      </div>
+    <section id="three" className="wrapper alt style5">
+      <section className="spotlight">
+        <div className="image">
+          <img src={pic_giving} alt="" />
+        </div>
+        <div className="content">
+          <h2>Giving</h2>
+          <header>
+            <h5>Check</h5>
+            <p>
+              Please write your offering check to <b><i><u>Travis Christian Assembly</u></i></b> with <b><i><u>"Overseas Chinese Homecoming Gathering"</u></i></b> as memo, and mail it to the following address:
+              <br/>
+              <br/>
+              <b>
+                Travis Christian Assembly
+                <br/>
+                8304 East US Hwy 290
+                <br/>
+                Austin, TX 78724
+                <br/>
+                USA
+              </b>
+            </p>
+          </header>
+          <header>
+            <h5>Zelle</h5>
+            <p>
+              Please type in <b><i><u>chase@tcaweb.org</u></i></b> as the recipient for your Zelle payments (e.g. via Chase QuickPay), and type in <b><i><u>"Overseas Chinese Homecoming Gathering"</u></i></b> as notes.
+            </p>
+          </header>
+          <header>
+            <h5>PayPal</h5>
+            <p>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PS6U4A9K67WBS&source=url">Click here</a> to give via Paypal. Both credit cards and debit cards are accepted.
+            </p>
+          </header>
+        </div>
+      </section>
     </section>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

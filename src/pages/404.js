@@ -1,6 +1,5 @@
-import React from 'react';
-
-import Layout from '../components/Layout';
+import React from 'react'
+import Layout from 'components/Layout'
 
 const IndexPage = () => (
   <Layout fullMenu>
@@ -11,6 +10,6 @@ const IndexPage = () => (
       </header>
     </article>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

@@ -64,6 +64,6 @@ const IndexPage = () => (
       </section>
     </article>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

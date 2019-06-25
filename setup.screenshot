@@ -1,0 +1,85 @@
+~/PersonalWorkplace/OverseasChineseHomecoming  gatsby new OverseasChineseHomecomingGatheringWebsite https://github.com/anubhavsrivastava/gatsby-starter-spectral
+info Creating new site from git: https://github.com/anubhavsrivastava/gatsby-starter-spectral.git
+
+Cloning into 'OverseasChineseHomecomingGatheringWebsite'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (79/79), done.
+remote: Total 107 (delta 25), reused 106 (delta 24), pack-reused 0
+Receiving objects: 100% (107/107), 2.73 MiB | 4.42 MiB/s, done.
+success Created starter directory layout
+info Installing packages...
+
+npm WARN deprecated @babel/polyfill@7.4.4: 🚨 As of Babel 7.4.0, this
+npm WARN deprecated package has been deprecated in favor of directly
+npm WARN deprecated including core-js/stable (to polyfill ECMAScript
+npm WARN deprecated features) and regenerator-runtime/runtime
+npm WARN deprecated (needed to use transpiled generator functions):
+npm WARN deprecated
+npm WARN deprecated   > import "core-js/stable";
+npm WARN deprecated   > import "regenerator-runtime/runtime";
+npm WARN deprecated @hapi/joi@14.5.0: This version is no longer maintained
+npm WARN deprecated joi@11.4.0: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated topo@2.0.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated hoek@4.2.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+
+> fsevents@1.2.9 install /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using request for node-pre-gyp https download
+[fsevents] Success: "/Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/fsevents/lib/binding/Release/node-v72-darwin-x64/fse.node" is installed via remote
+
+> sharp@0.22.1 install /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/sharp
+> (node install/libvips && node install/dll-copy && prebuild-install) || (node-gyp rebuild && node install/dll-copy)
+
+info sharp Using cached /Users/drewwei/.npm/_libvips/libvips-8.7.4-darwin-x64.tar.gz
+
+> node-sass@4.12.0 install /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /Users/drewwei/.npm/node-sass/4.12.0/darwin-x64-72_binding.node
+
+> core-js@2.6.9 postinstall /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> core-js-pure@3.1.4 postinstall /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/core-js-pure
+> node scripts/postinstall || echo "ignore"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> gatsby-telemetry@1.1.0 postinstall /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/gatsby-telemetry
+> node src/postinstall.js
+
+
+> node-sass@4.12.0 postinstall /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /Users/drewwei/PersonalWorkplace/OverseasChineseHomecoming/OverseasChineseHomecomingGatheringWebsite/node_modules/node-sass/vendor/darwin-x64-72/binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN ts-pnp@1.1.2 requires a peer of typescript@* but none is installed. You must install peer dependencies yourself.
+
+added 1708 packages from 924 contributors and audited 21577 packages in 72.311s
+found 0 vulnerabilities
+info Initialising git in OverseasChineseHomecomingGatheringWebsite
+
+info Create initial git commit in OverseasChineseHomecomingGatheringWebsite
+
+~/PersonalWorkplace/OverseasChineseHomecoming 

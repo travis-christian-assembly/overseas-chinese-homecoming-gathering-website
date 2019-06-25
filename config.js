@@ -1,31 +1,30 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
+  siteTitle: 'Overseas Chinese Homecoming Gathering',
   manifestName: 'Spectral',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestShortName: 'Landing',
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#0abab5',
+  manifestThemeColor: '#0abab5',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
-  // social
+  pathPrefix: '/overseas-chinese-homecoming-gathering-website',
+  heading: 'Overseas Chinese Homecoming Gathering',
+  subHeading: 'It’s the fullness of time, overseas Chinese come home!',
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      icon: 'fa-youtube',
+      name: 'YouTube',
+      url: 'https://www.youtube.com/channel/UCOff0cemmvakSbkV4HhNzbA',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/',
     },
     {
       icon: 'fa-facebook',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
-    },
-  ],
+      url: 'https://www.facebook.com/',
+    }
+  ]
 };

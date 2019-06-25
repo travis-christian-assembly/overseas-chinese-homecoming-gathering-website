@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
 export default function Nav({ onMenuToggle = () => {} }) {
   return (
@@ -22,10 +22,22 @@ export default function Nav({ onMenuToggle = () => {} }) {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/Generic">Generic Page</Link>
+                <Link to="/news">News</Link>
               </li>
               <li>
-                <Link to="/Elements">Elements</Link>
+                <Link to="/gatherings">Gatherings</Link>
+              </li>
+              <li>
+                <Link to="/sharings">Sharings</Link>
+              </li>
+              <li>
+                <Link to="/giving">Giving</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCOff0cemmvakSbkV4HhNzbA/live" target="_blank" rel="noopener noreferrer">Live Stream</a>
               </li>
             </ul>
             <a

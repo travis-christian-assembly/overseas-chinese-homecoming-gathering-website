@@ -7,12 +7,6 @@
 @import 'fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 // Breakpoints.
 
 	@include breakpoints((
@@ -979,9 +973,9 @@
 		}
 	}
 
-/* Features */
+/* Upcoming Gatherings */
 
-	.features {
+	.upcoming-gatherings {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		@include vendor('justify-content', 'center');
@@ -996,7 +990,7 @@
 			text-align: left;
 			width: 50%;
 
-			@for $i from 1 through _misc(max-features) {
+			@for $i from 1 through _misc(max-upcoming-gatherings) {
 				$j: 0.035 * $i;
 
 				&:nth-child(#{$i}) {
@@ -1306,9 +1300,9 @@
 				}
 			}
 
-		// Features
+		// Upcoming Gatherings
 
-			.features {
+			.upcoming-gatherings {
 				li {
 					@include breakpoint('<=small') {
 						border-top-color: _palette($p, border);

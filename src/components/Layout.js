@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
 
-import '../assets/sass/main.scss';
-import Footer from './Footer';
-import SideBar from './Sidebar';
+import 'assets/sass/main.scss'
+import Footer from 'components/Footer'
+import SideBar from 'components/Sidebar'
 
 class Layout extends Component {
   constructor(props) {
@@ -50,7 +50,7 @@ class Layout extends Component {
                 { name: 'keywords', content: 'site, web' },
               ]}
             >
-              <html lang="en" />
+              <html lang="en"/>
             </Helmet>
             <div
               className={
@@ -60,9 +60,9 @@ class Layout extends Component {
               }
             >
               <div id="page-wrapper">
-                <SideBar fullMenu={fullMenu} />
+                <SideBar fullMenu={fullMenu}/>
                 {children}
-                <Footer />
+                <Footer/>
               </div>
             </div>
           </>
@@ -74,6 +74,6 @@ class Layout extends Component {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

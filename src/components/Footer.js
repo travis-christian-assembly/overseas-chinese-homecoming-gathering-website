@@ -1,5 +1,6 @@
-import React from 'react';
-import config from '../../config';
+import React from 'react'
+import config from 'root/config'
+
 export default function Footer() {
   return (
     <footer id="footer">
@@ -16,7 +17,7 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Spectral</li>
+        <li>&copy; North American Chinese Homecoming Gathering Servant Team (NACC)</li>
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>

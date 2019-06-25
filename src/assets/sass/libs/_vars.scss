@@ -1,8 +1,8 @@
 // Misc.
 	$misc: (
-		max-spotlights:		10,
-		max-features:		10,
-		z-index-base:		10000
+		max-spotlights: 10,
+		max-upcoming-gatherings: 10,
+		z-index-base: 10000
 	);
 
 // Duration.
@@ -31,7 +31,7 @@
 
 // Palette.
 	$palette: (
-		bg:					#2e3842,
+		bg:					#5b6773,
 		fg:					#fff,
 		fg-bold:			#fff,
 		fg-light:			rgba(255,255,255,0.5),
@@ -41,10 +41,10 @@
 		border2-bg:			rgba(144,144,144,0.5),
 
 		accent1: (
-			bg:				#21b2a6,
+			bg:				#6dbbdb,
 			fg-bold:		#ffffff,
-			fg:				mix(#21b2a6, #ffffff, 25%),
-			fg-light:		mix(#21b2a6, #ffffff, 40%),
+			fg:				mix(#6dbbdb, #ffffff, 25%),
+			fg-light:		mix(#6dbbdb, #ffffff, 40%),
 			border:			rgba(0,0,0,0.125),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(0,0,0,0.25),
@@ -96,10 +96,10 @@
 		),
 
 		accent6: (
-			bg:				#ed4933,
+			bg:				#5f92d9,
 			fg-bold:		#ffffff,
-			fg:				mix(#ed4933, #ffffff, 25%),
-			fg-light:		mix(#ed4933, #ffffff, 40%),
+			fg:				mix(#5f92d9, #ffffff, 25%),
+			fg-light:		mix(#5f92d9, #ffffff, 40%),
 			border:			rgba(0,0,0,0.125),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(0,0,0,0.25),
