@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-dd4ac5e4a77782309a24.js"
+    "url": "webpack-runtime-d1c024538122809d29ba.js"
   },
   {
-    "url": "app-a03d757b5a723191c410.js"
+    "url": "app-95e6eec65d237411670f.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-734b3186173bf2375140.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e22bc296634a34916732d78468efbdf3"
+    "revision": "3eb0d3aa951e5723fe28b92b9a6364b9"
   },
   {
-    "url": "styles.ec52b0dc403d0010465e.css"
+    "url": "styles.e260248e40ba6f510908.css"
   },
   {
     "url": "styles-9cc897abb4779c0508f6.js"
@@ -48,19 +48,19 @@ self.__precacheManifest = [
     "url": "1-31c824ff56c8a6a1542b.js"
   },
   {
-    "url": "component---src-pages-404-js-32074eeaeb8f7b167ee3.js"
+    "url": "component---src-pages-404-js-fe65b32c235acf0d11b9.js"
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "e4e2a2ab32b2d51299e7a3e15f5f4859"
+    "revision": "2523b01ef85a77e0826acda620f18eec"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "a0b93452ea9c1a444e4b560085a106f5"
+    "revision": "2841da204d5462d1001a8c931ce03753"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "0d37bff744923637bf239fbbed806194"
+    "revision": "01a14d428cc7078f6d3ede71bb140b2f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -82,7 +82,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/OverseasChineseHomecomingGatheringWebsite/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/overseas-chinese-homecoming-gathering-website/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -154,7 +154,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/OverseasChineseHomecomingGatheringWebsite${pathname}`
+        return `/overseas-chinese-homecoming-gathering-website${pathname}`
       } else {
         return pathname
       }
