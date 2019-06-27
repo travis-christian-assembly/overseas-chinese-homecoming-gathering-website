@@ -9,8 +9,8 @@ export default function Nav({ onMenuToggle = () => {} }) {
           <a
             href="#menu"
             onClick={e => {
-              e.preventDefault();
-              onMenuToggle();
+              e.preventDefault()
+              onMenuToggle()
             }}
             className="menuToggle"
           >
@@ -46,8 +46,8 @@ export default function Nav({ onMenuToggle = () => {} }) {
             <a
               className="close"
               onClick={e => {
-                e.preventDefault();
-                onMenuToggle();
+                e.preventDefault()
+                onMenuToggle()
               }}
               href="#menu"
             >
@@ -57,5 +57,5 @@ export default function Nav({ onMenuToggle = () => {} }) {
         </li>
       </ul>
     </nav>
-  );
+  )
 }

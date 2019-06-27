@@ -9,27 +9,27 @@ import SideBar from 'components/Sidebar'
 
 class Layout extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       isPreloaded: true,
-    };
+    }
   }
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ isPreloaded: false });
-    }, 100);
+      this.setState({ isPreloaded: false })
+    }, 100)
   }
 
   componentWillUnmount() {
     if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId)
     }
   }
 
   render() {
-    const { children, fullMenu } = this.props;
-    const { isPreloaded } = this.state;
+    const { children, fullMenu } = this.props
+    const { isPreloaded } = this.state
     return (
       <StaticQuery
         query={graphql`
@@ -68,7 +68,7 @@ class Layout extends Component {
           </>
         )}
       />
-    );
+    )
   }
 }
 
