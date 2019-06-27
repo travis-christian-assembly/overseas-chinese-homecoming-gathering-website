@@ -22,7 +22,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/news">News</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link to="/gatherings">Gatherings</Link>
@@ -32,9 +32,6 @@ export default function Nav({ onMenuToggle = () => {} }) {
               </li>
               <li>
                 <Link to="/giving">Giving</Link>
-              </li>
-              <li>
-                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <a href="https://www.flickr.com/photos/182245855@N04/albums" target="_blank" rel="noopener noreferrer">Gallery</a>

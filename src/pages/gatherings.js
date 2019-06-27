@@ -10,30 +10,35 @@ const IndexPage = ({
 }) => {
   const UpcomingGatherings = edges
     .filter(edge => !!edge.node.frontmatter.date)
+    .filter(edge => edge.node.frontmatter.addToIndex)
     .filter(edge => new Date() < Date.parse(edge.node.frontmatter.date))
-    .map(edge => <GatheringLink key={edge.node.id} gathering={edge.node} />)
+    .map(edge => <li key={edge.node.id}><GatheringLink key={edge.node.id} gathering={edge.node} /></li>)
 
-  const PastGatherings = edges
+  const PreviousGatherings = edges
     .filter(edge => !!edge.node.frontmatter.date)
+    .filter(edge => edge.node.frontmatter.addToIndex)
     .filter(edge => new Date() > Date.parse(edge.node.frontmatter.date))
-    .map(edge => <GatheringLink key={edge.node.id} gathering={edge.node} />)
+    .map(edge => <li key={edge.node.id}><GatheringLink key={edge.node.id} gathering={edge.node} /></li>)
 
   return (
     <Layout fullMenu>
       <article id="main">
         <header>
           <h2>Gatherings</h2>
-          <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
         </header>
         <section className="wrapper style5">
           <div className="inner">
             <h3>Upcoming Gatherings</h3>
-            {UpcomingGatherings}
+            <ul>
+              {UpcomingGatherings}
+            </ul>
 
             <hr/>
 
-            <h3>Past Gatherings</h3>
-            {PastGatherings}
+            <h3>Previous Gatherings</h3>
+            <ul>
+              {PreviousGatherings}
+            </ul>
           </div>
         </section>
       </article>
@@ -45,15 +50,19 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: ASC, fields: [ frontmatter___date ] },
+      filter: { frontmatter: { type: { eq: "gathering" } } }
+    ) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             path
+            date(formatString: "MMMM DD, YYYY")
             title
+            addToIndex
           }
         }
       }

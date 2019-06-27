@@ -5,61 +5,22 @@ const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
       <header>
-        <h2>Generic Page</h2>
-        <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+        <h2>About Us</h2>
       </header>
       <section className="wrapper style5">
         <div className="inner">
-          <h3>Lorem ipsum dolor</h3>
-          <p>
-            Morbi mattis mi consectetur tortor elementum, varius pellentesque
-            velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac
-            scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis
-            lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo.
-            Maecenas sagittis felis ac sagittis semper. Curabitur purus leo,
-            tempus sed finibus eget, fringilla quis risus. Maecenas et lorem
-            quis sem varius sagittis et a est. Maecenas iaculis iaculis sem.
-            Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo.
-            Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci
-            fringilla tincidunt. Aliquam eleifend ligula non velit accumsan
-            cursus. Etiam ut gravida sapien.
-          </p>
-
-          <p>
-            Vestibulum ultrices risus velit, sit amet blandit massa auctor sit
-            amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis
-            id vel diam. Praesent sit amet posuere risus, eu faucibus lectus.
-            Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.
-            Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna,
-            sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere
-            leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse
-            id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor
-            consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec
-            felis elementum varius.
-          </p>
-
-          <hr />
-
-          <h4>Feugiat aliquam</h4>
-          <p>
-            Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec
-            varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia
-            tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in
-            tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean
-            erat diam, tempus aliquet erat.
-          </p>
-
-          <p>
-            Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus
-            rutrum cursus velit, eget condimentum nunc blandit vel. In at
-            pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget,
-            fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra
-            commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim
-            vel, posuere finibus justo. Vivamus facilisis maximus nibh quis
-            pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum.
-            Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.
-          </p>
+          <header className="major">
+            <h2>
+              About Homecoming Gathering
+            </h2>
+            <p>
+              Homecoming gathering is a group of pastors and believers from nations who have been walking together — praying, worshipping, fellowshipping and crying out to God together to see the glory of God to come to this nation. It is open to the Body of Christ to walk together as family to whatever extent the Lord releases them to do so. Our heart is to embrace all believers, all denominations, and para-churches. And just like a family, we desire to walk together with each generation. Old and young alike, all have an important role to play in a family, and all are needed to make a family complete.
+            </p>
+            <br/>
+            <p>
+              Unlike a conference with pre-determined speakers and pre-set teachings, in a gathering believers answer a call from the Lord to come together to worship and wait before Him, posturing themselves to hear what the Spirit is saying to the Church. A team of seasoned mature leaders provides spiritual oversight and protection in the meetings, as they walk together to discern what the Lord is saying through the body and facilitate the working of the Holy Spirit.
+            </p>
+          </header>
         </div>
       </section>
     </article>

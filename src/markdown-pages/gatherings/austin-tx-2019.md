@@ -1,8 +1,10 @@
 ---
-path: '/gatherings/hong-kong-2019'
-title: 'Gathering @ Hong Kong - 2019'
-date: '2019-07-24'
-description: 'Not provided'
+path: '/gatherings/austin-tx-2019'
+date: '2019-05-31T00:00:00.000Z'
+type: 'gathering'
+title: 'Gathering @ Austin, TX - 2019'
+description: 'First Overseas Chinese Homecoming Gathering ever held on a university campus.'
+addToIndex: true
 ---
 
 <header>
@@ -10,8 +12,8 @@ description: 'Not provided'
   <p>It’s the fullness of time, overseas Chinese come home!</p>
 </header>
 <p>
-  <b>July 24th - July 27th, 2019</b><br/>
-  <b>Hong Kong, Hong Kong</b><br/>
+  <b>May 30th - June 1st, 2019</b><br/>
+  <b>Austin, Texas, USA</b><br/>
 
   In the Bible, the 70th year is a fullness of time, a critical year marking the end of a generational cycle & the beginning of a new one.<br/>
 
@@ -39,3 +41,60 @@ description: 'Not provided'
 
   Unlike a conference with pre-determined speakers and pre-set teachings, in a gathering believers answer a call from the Lord to come together to worship and wait before Him, posturing themselves to hear what the Spirit is saying to the Church. A team of seasoned mature leaders provides spiritual oversight and protection in the meetings, as they walk together to discern what the Lord is saying through the body and facilitate the working of the Holy Spirit.
 </p>
+
+<hr/>
+
+<h2>Schedule</h2>
+
+<div className="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>May 30, 2019<br/>Thursday</th>
+        <th>May 31, 2019<br/>Friday</th>
+        <th>June 1, 2019<br/>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b><i>Session 1</i></b><br/>6:30pm ~ 9:30pm</td>
+        <td><b><i>Session 2</i></b><br/>9:00am ~ 12:00pm</td>
+        <td><b><i>Session 5</i></b><br/>9:00am ~ 12:00pm</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b><i>Session 3</i></b><br/>2:00pm ~ 5:00pm</td>
+        <td><b><i>Session 6</i></b><br/>2:00pm ~ 5:00pm</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><b><i>Session 4</i></b><br/>6:30pm ~ 9:30pm</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr/>
+
+<h2>Playlist</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLq6NhR3hu7glnLdb_enWXaDMHMW78dsh0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+
+<hr/>
+
+<h2>Gallery</h2>
+
+<iframe style="position: relative; top: 0; left: 0;" width="800" height="400" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=72157709264091261&sort=0&by=album&theme=default_notextpanel&scale=fill&speed=3000&limit=100&skin=alexis&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+</iframe>
+<script type="text/javascript">
+  function showpics() {
+    var a = $("#box").val();
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=" + a + "&tagmode=any&format=json&jsoncallback=?", function(a) {
+        $("#images").hide().html(a).fadeIn("fast"), $.each(a.items, function(a, e) {
+            $("<img/>").attr("src", e.media.m).appendTo("#images")
+        })
+    })
+  }
+</script>

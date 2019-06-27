@@ -24,6 +24,7 @@
 GitHub Pages is used for beta testing, any manual testing or automated testing should be done against this stage before promoting changes to the next stage.
 
 * Run command: `npm run deploy`
+* Beta website can be reached at: https://travis-christian-assembly.github.io/overseas-chinese-homecoming-gathering-website/
 
 ### Publish to Prod Stage
 Once testing (manual or automated) is done in Beta stage, do the following to deploy changes to the production website.

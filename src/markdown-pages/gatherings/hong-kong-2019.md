@@ -1,8 +1,10 @@
 ---
-path: '/gatherings/new-york-ny-2019'
-title: 'Gathering @ New York, NY - 2019'
-date: '2019-11-01'
+path: '/gatherings/hong-kong-2019'
+date: '2019-07-24T00:00:00.000Z'
+type: 'gathering'
+title: 'Gathering @ Hong Kong - 2019'
 description: 'Not provided'
+addToIndex: true
 ---
 
 <header>
@@ -10,8 +12,8 @@ description: 'Not provided'
   <p>It’s the fullness of time, overseas Chinese come home!</p>
 </header>
 <p>
-  <b>November 1st - November 4th, 2019</b><br/>
-  <b>New York, NY, USA</b><br/>
+  <b>July 24th - July 27th, 2019</b><br/>
+  <b>Hong Kong, Hong Kong</b><br/>
 
   In the Bible, the 70th year is a fullness of time, a critical year marking the end of a generational cycle & the beginning of a new one.<br/>
 
