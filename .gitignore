@@ -8,3 +8,8 @@ yarn.lock
 # Build directory
 /public
 .DS_Store
+
+# Test output
+geckodriver.log
+chromedriver.log
+/tests_output

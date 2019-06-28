@@ -1,0 +1,58 @@
+{
+  "src_folders" : ["tst"],
+  "webdriver" : {
+    "start_process": true
+  },
+  "test_settings" : {
+    "default" : {
+      "webdriver": {
+        "cli_args": [
+          "--log", "debug"
+        ]
+      },
+      "desiredCapabilities" : {
+        "loggingPrefs": { "driver": "INFO", "server": "OFF", "browser": "INFO" }
+      }
+    },
+    "firefox-local" : {
+      "launch_url" : "http://localhost:8000",
+      "webdriver": {
+        "server_path": "node_modules/.bin/geckodriver",
+        "port": 4444
+      },
+      "desiredCapabilities" : {
+        "browserName" : "firefox"
+      }
+    },
+    "chrome-local" : {
+      "launch_url" : "http://localhost:8000",
+      "webdriver": {
+        "server_path": "node_modules/.bin/chromedriver",
+        "port": 9515
+      },
+      "desiredCapabilities" : {
+        "browserName" : "chrome"
+      }
+    },
+    "firefox-beta" : {
+      "launch_url" : "https://travis-christian-assembly.github.io/overseas-chinese-homecoming-gathering-website/",
+      "webdriver": {
+        "server_path": "node_modules/.bin/geckodriver",
+        "port": 4444
+      },
+      "desiredCapabilities" : {
+        "browserName" : "firefox"
+      }
+    },
+    "chrome-beta" : {
+      "launch_url" : "https://travis-christian-assembly.github.io/overseas-chinese-homecoming-gathering-website/",
+      "webdriver": {
+        "server_path": "node_modules/.bin/chromedriver",
+        "port": 9515
+      },
+      "desiredCapabilities" : {
+        "browserName" : "chrome"
+      }
+    }
+  }
+}
