@@ -10,11 +10,19 @@ export default function GatheringTemplate({ data }) {
     <Layout fullMenu>
       <article id="main">
         <header>
-          <h2>{frontmatter.title}</h2>
-          <p>{frontmatter.description}</p>
+          <h2>Gatherings</h2>
         </header>
         <section className="wrapper style5">
-          <div className="inner" dangerouslySetInnerHTML={{ __html: html }}/>
+          <div className="inner">
+            <section>
+              <header>
+                <h2>{frontmatter.title}</h2>
+                <p>{frontmatter.description}</p>
+              </header>
+            </section>
+            <hr />
+            <div dangerouslySetInnerHTML={{ __html: html }}/>
+          </div>
         </section>
       </article>
     </Layout>

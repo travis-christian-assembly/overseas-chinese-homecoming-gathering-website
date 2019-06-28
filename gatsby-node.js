@@ -6,6 +6,18 @@ exports.createPages = ({ actions, graphql }) => {
   const gatheringTemplate = path.resolve('src/templates/GatheringTemplate.js')
   const sharingTemplate = path.resolve('src/templates/SharingTemplate.js')
 
+  function createPageForPageType(node, type, template) {
+    if (type == node.frontmatter.type) {
+      createPage(
+        {
+          path: node.frontmatter.path,
+          component: template,
+          context: {}  // additional data can be passed via context
+        }
+      )
+    }
+  }
+
   return graphql(`
     {
       allMarkdownRemark{
@@ -27,25 +39,8 @@ exports.createPages = ({ actions, graphql }) => {
 
       return result.data.allMarkdownRemark.edges.forEach(
         ({ node }) => {
-          if ('gathering' == node.frontmatter.type) {
-            createPage(
-              {
-                path: node.frontmatter.path,
-                component: gatheringTemplate,
-                context: {}  // additional data can be passed via context
-              }
-            )
-          }
-
-          if ('sharing' == node.frontmatter.type) {
-            createPage(
-              {
-                path: node.frontmatter.path,
-                component: sharingTemplate,
-                context: {}  // additional data can be passed via context
-              }
-            )
-          }
+          createPageForPageType(node, 'gathering', gatheringTemplate)
+          createPageForPageType(node, 'sharing', sharingTemplate)
         }
       )
     }

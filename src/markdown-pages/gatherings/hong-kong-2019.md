@@ -3,7 +3,7 @@ path: '/gatherings/hong-kong-2019'
 date: '2019-07-24T00:00:00.000Z'
 type: 'gathering'
 title: 'Gathering @ Hong Kong - 2019'
-description: 'Not provided'
+description: 'This is a demo page, not real!'
 addToIndex: true
 ---
 

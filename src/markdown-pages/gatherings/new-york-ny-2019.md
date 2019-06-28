@@ -3,7 +3,7 @@ path: '/gatherings/new-york-ny-2019'
 date: '2019-11-01T00:00:00.000Z'
 type: 'gathering'
 title: 'Gathering @ New York, NY - 2019'
-description: 'Not provided'
+description: 'This is a demo page, not real!'
 addToIndex: true
 ---
 
